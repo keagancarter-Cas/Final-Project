@@ -2,20 +2,59 @@
 const centered = document.getElementsByClassName("center");
 
 //3. Using querySelector, select the first div with the info for Batman: The Animated Series inside of it and set it to a const variable called batman.
-const jojoIds = ["johnathan", "joseph", "jotaro", "josuke", "jolyne", "johnny", "Gappy", "Jodio"];
+const jojoIds = ["johnathan", "joseph", "jotaro", "josuke", "Giorno", "jolyne", "johnny", "Gappy", "Jodio"];
 
 // Create descriptions for each Joestar
 const jojoDescriptions = {
-  johnathan: "Jonathan Joestar - Stand: Null",
-  joseph: "Joseph Joestar - Stand: Hermit Purple",
-  jotaro: "Jotaro Kujo - Stand: Star Platinum ",
-  josuke: "Josuke Higashikata - Stand: Crazy Diamond",
-  jolyne: "Jolyne Cujoh - Stand: Stone Free",
-  johnny: "Johnny Joestar - Stand: Tusk (Acts: 1-4)",
-  Gappy: "Gappy (Josuke Part 8) - Stand: Soft and Wet:Go Beyond!",
-  Jodio: "Jodio Joestar - Stand: November Rain"
-};
+  johnathan: {
+    Name: "Jonathan Joestar",
+    FightingStyle: "Hamon Technique; Ripple",
+    Introduced: "Part 1; Phantom Blood"},
 
+  joseph: {
+    Name: "Joseph Joestar", 
+    Stand: "Hermit Purple",
+    Introduced: "Part 2; Battle Tendancy"},
+
+  jotaro: {
+    Name:"Jotaro Kujo", 
+    Stand: "Star Platinum",
+    Evolution: "Over Heaven",
+    Introduced: "Part 3; Stardust Crusaders"},
+
+  josuke: {
+    Name: "Josuke Higashikata", 
+    Stand: "Crazy Diamond",
+    Introduced: "Part 4; Diamond Is Unbreakable"},
+
+  Giorno: {
+    Name: "Giorno Giovanna",  
+    Stand: "Gold Experience",
+    Evolution:"Requiem",
+    Introduced: "Part 5; Golden Wind"},
+
+  jolyne: {
+    Name:"Jolyne Cujoh", 
+    Stand: "Stone Free", 
+    Introduced: "Part 6; Stone Ocean"},
+
+  johnny: {
+    Name:"Johnny Joestar",
+    Stand: "Tusk",
+    Evolution: "Acts: 1-4",
+    Introduced: "Part 7; Steel Ball Run"},
+
+  Gappy: {
+    Name: "Gappy",
+    Stand: "Soft and Wet",
+    Evolution: "Go Beyond!",
+    Introduced: "Part 8; Jojolion"},
+
+  Jodio: { 
+    Name: "Jodio Joestar", 
+    Stand: "November Rain",
+    Introduced: "Part 9; JOJOLands"}
+};
 const joestars = jojoIds.map(id => document.querySelector(`#${id}`));
 console.log("JOE STARS", joestars)
 const jojoList = document.getElementById("jojo-list");
@@ -35,7 +74,14 @@ if (jojoList) {
       // Create tooltip element
       const tooltip = document.createElement("div");
       tooltip.className = "tooltip";
-      tooltip.textContent = jojoDescriptions[name];
+      const info = jojoDescriptions[name];
+      const details = [];
+      if (info.FightingStyle) details.push(info.FightingStyle);
+      if (info.Stand) details.push(info.Stand);
+      if (info.Evolution) details.push(info.Evolution);
+      const detailText = details.length ? " — " + details.join(" - ") : "";
+      const introducedText = info.Introduced ? " (" + info.Introduced + ")" : "";
+      tooltip.textContent = info.Name + detailText + introducedText;
       tooltip.style.position = "absolute";
       tooltip.style.bottom = "100%";
       tooltip.style.left = "0";
@@ -60,6 +106,13 @@ if (jojoList) {
     jojoList.appendChild(li);
   });
 }
+//search bar
+const input = document.getElementById("user-input");
+const display = document.getElementById("display-text");
+
+input.addEventListener("input", () => {
+    display.textContent = input.value;
+});
 
 //4. Using querySelectorAll, select all the h3 elements and set it to a const variable called h3s
 const h3s = document.querySelectorAll("h3");
