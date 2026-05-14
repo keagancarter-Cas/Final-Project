@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Collection App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
 
@@ -17,27 +18,49 @@
     <!-- ========== STATS SECTION ========== -->
     <!-- Use this area to display summary stats about your collection -->
     <section id="stats-section">
-        <h2>How To Obtain A Stand</h2>
+        <h2>Protagonists</h2>
         <div id="stats-display">
             <!-- Your JavaScript will fill this in -->
-            <p>Total Items: 5</p>
+            <p2>Main Users: 9</p2>
+            <p2>Joestars Stand Users: 7</p2>
+            <p2>Stand Users Without Joestars as Last Name: 3</p2>
         </div>
     </section>
 
-    <!-- ========== ADD ITEM FORM ========== -->
-    <!-- These inputs let the user add a new item to the collection -->
-    <!-- Rename the labels and add/remove inputs to fit YOUR theme -->
-    <section id="add-section">
-        <h2>Stands</h2>
-        <div id="form-container">
-            <label for="input-name">user</label>
-            <input type="text" id="input-name" placeholder="Enter name...">
+        <section id="add-section">
+        <h2>Joestar Lineage</h2>
+        <ul id="jojo-list"></ul>
+    </section>
+<h3></h3>
+    <!-- ========== SEARCH / FILTER ========== -->
+   <section id="Information-section">
+        <h2>Background Information On Stand Creations</h2>
+        <div id="stats-display">
+            <!-- Your JavaScript will fill this in -->
+            <p>Every stand is based off of a cultural song, and has some correlation to it</p>
+            <p>The stand also is reflected back on the song which causes its abilities it has to be manifested.</p>
+        </div>
+    </section>
 
-            <label for="input-category">Category:</label>
-            <input type="text" id="input-category" placeholder="Enter category...">
+    <!-- ========== COLLECTION DISPLAY ========== -->
+    <!-- Your JavaScript will build cards/items here -->
+    <section id="collection-section">
+        <h2>My Stand Creation</h2>
+        <div id="collection-display">
+            <!-- Items will be rendered here by your render function -->
+             <div id="form-container">
+            <label for="user-name">Joestar Name:</label>
+            <input type ="text" id="input-name"
+            placeholder="First + Last start with J">
+            
+            <label for="input-name">Stand Name:</label>
+            <input type="text" id="input-name" placeholder="Must be a song name">
 
-            <label for="input-rating">Rating (1-10):</label>
-            <input type="number" id="input-rating" min="1" max="10" placeholder="1-10">
+            <label for="input-category">Stand Ability:</label>
+            <input type="text" id="input-category" placeholder="Enter Ability Specialty">
+
+            <label for="input-category">Stand Ability:</label>
+            <input type="text" id="input-category" placeholder="Type 'null' if it will not have another trait">
 
             <label for="input-notes">Notes:</label>
             <input type="text" id="input-notes" placeholder="Any extra info...">
@@ -45,25 +68,12 @@
             <button id="add-btn">Add to Collection</button>
         </div>
     </section>
-
-    <!-- ========== SEARCH / FILTER ========== -->
-    <section id="search-section">
-        <label for="search-input">Search:</label>
-        <input type="text" id="search-input" placeholder="Type to search...">
-    </section>
-
-    <!-- ========== COLLECTION DISPLAY ========== -->
-    <!-- Your JavaScript will build cards/items here -->
-    <section id="collection-section">
-        <h2>My Items</h2>
-        <div id="collection-display">
-            <!-- Items will be rendered here by your render function -->
         </div>
     </section>
 
     <!-- ========== YOUR JAVASCRIPT FILE ========== -->
     <!-- Create an app.js file and link it here -->
-    <script src="app.js"></script>
+    
 
 </body>
 </html>
