@@ -119,8 +119,69 @@ section h2 {
 }
 
 /* ---------- SEARCH ---------- */
-#search-section {
+#search {
+    background-color: #16213e;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#search h1 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #e94560;
+}
+
+#hidden-information-display {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-form-container #user-input {
+    width: 100%;
+    max-width: 360px;
+    padding: 10px 12px;
+    border: 2px solid #e94560;
+    border-radius: 6px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+#user-input:focus {
+    outline: none;
+    border-color: #fff;
+    background-color: #0f3460;
+}
+
+#display-text {
+    text-align: center;
+    color: #e94560;
+    font-weight: bold;
+    min-height: 20px;
+    font-size: 0.9rem;
+}
+
+#search-section {
+    display: center;
     align-items: center;
     gap: 12px;
 }
