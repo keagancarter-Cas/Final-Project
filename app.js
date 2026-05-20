@@ -8,70 +8,108 @@ const jojoIds = ["johnathan", "joseph", "jotaro", "josuke", "Giorno", "jolyne", 
 const jojoDescriptions = {
   johnathan: {
     Name: "Jonathan Joestar",
-    Personality: "He has a sense of justice, and chivalry",
+    Personality: "Honorable, selfless, and couragous, with a strong sense of justice",
+    Age: "20",
     FightingStyle: "Hamon Technique; Ripple",
-    FightingStyleInfo: "Martial arts technique,",
-    Introduced: "Part 1; Phantom Blood"},
+    FightingStyleInfo: "Martial arts technique, Controls the power of the sun and life force to deliver devastating blows to enemies",
+    Introduced: "Part 1; Phantom Blood"
+  },
 
   joseph: {
     Name: "Joseph Joestar", 
-    Personality: "He's cunning, resourceful, and intellectual",
+    Personality: "Cunning, resourceful, and intellectual, and cocky, as well as strategic",
+    Age: "18-91",
+    FightingStyle: "Hamon Technique; Ripple",
+    FightingStyleInfo: "Controls the power of the sun and life force to deliver devastating blows to enemies, later evolving into Hermit Purple",
     Stand: "Hermit Purple",
-    StandInfo: "",
-    Introduced: "Part 2; Battle Tendancy"},
+    StandType: "Close Range",
+    StandAppearance: "thorn covered vines",
+    StandAbilities: "unique ability called 'Divination', which lets it cast images onto a screen or draw a map. it can also channel Ripple, which is his hamon technique. Has the flexibility to be used as a grapple or sling, and used as a whip for offense",
+    Introduced: "Part 2; Battle Tendancy",
+    Appearances: "Appears in parts 2-4, having a huge role during parts 2, 3, and 4"
+  },
 
   jotaro: {
     Name:"Jotaro Kujo", 
-    Personality: "",
+    Personality: "Stoic, serious, and composed, as well as strong-willed",
+    Age: "17-40",
     Stand: "Star Platinum",
     Evolution: "Over Heaven",
-    StandInfo: "",
-    Introduced: "Part 3; Stardust Crusaders"},
+    StandType: "Close Range",
+    StandAppearance: "Appearance; Humanoid stand which is manifested upon being called upon, it has a muscular build similar to Jotaro's. Its skin is a variety between purple, blue, green, and gold",
+    StandAbilities: "Has the unique ability to timestop for a few seconds, with everything that has been interacted with during the timestop being affected after time resumes. It is symbolic for its strength, and has immense power.",
+    Introduced: "Part 3; Stardust Crusaders",
+    Appearances: "Appears in parts 3-6, having a huge role during parts 3, 4, and 5"
+  },
 
   josuke: {
     Name: "Josuke Higashikata", 
-    Personality: "",
+    Personality: "compassionate, kind hearted, and social",
+    Age: "16",
     Stand: "Crazy Diamond",
-    StandInfo: "",
-    Introduced: "Part 4; Diamond Is Unbreakable"},
+    StandType: "Close Range",
+    StandAppearance: "Armored appearance, with a corinthian helmet. It has cables attached to the back of its head and upper back. A heart motif can be seen between the top of its head, chin, shoulder, celiac plexus, belt and also knees. Its color scheme is also blue, pink, and sometimes green",
+    StandAbilities: "Has the ability to heal any wounds that have been inflicted onto a person, only capable of healing if the person hasn't been killed. Everytime the person is healed however, the pain inflicted is reinflicted but still healed to the original form. Similar to Star Platinum, it is another strong and humanoid-like stand.",
+    Introduced: "Part 4; Diamond Is Unbreakable"
+  },
 
   Giorno: {
     Name: "Giorno Giovanna", 
-    Personality: "", 
+    Personality: "calm, intelligent, morally driven, strong-witted", 
+    Age: "15-16",
     Stand: "Gold Experience",
     Evolution:"Requiem",
-    StandInfo: "",
-    Introduced: "Part 5; Golden Wind"},
+    StandType: "Close Range",
+    StandAppearance: "Humanoid, slender and of average height(resembling Giorno's physical build.), Top of its head is resemblant to that of a soldier wearing a helmet but with a ladybug-like pattern. Stylized wings are shown all over the body of the stand, and is based upon the scarab beetle. Its color scheme is resemblant of that which is yellow, white, and orange",
+    StandAbilities: "Able to manipulate the idea of life, seemingly producing endless amounts of life energy. It can revive those who are unalive as long as it has its soul still intact. He is unable to control the object however(majorly) when the object is attacked also, all damage inflicted is redirected back to the person who was the attacker. His stand focuses on the idea of reanimation for a short time.",
+    Introduced: "Part 5; Golden Wind"
+  },
 
   jolyne: {
     Name:"Jolyne Cujoh", 
-    Personality: "",
+    Personality: "brave, determined, fiercly independent, adaptable",
+    Age: "19", 
     Stand: "Stone Free", 
-    StandInfo: "",
-    Introduced: "Part 6; Stone Ocean"},
+    StandType: "Close Range",
+    StandAppearance: "Humanoid stand, similar to that of its user. While being made up of string, has a pair of sunglasses, blade like protrusions from the top of its jaw to the back of its neck and bordering the sides of each eye. It has shoulder, and knee pads.",
+    StandAbilities: "Has integrated abilities that the user can manifest to their own will, like turning their body into string, or also using the stand as it is and manifesting it to fight close ranged.",
+    Introduced: "Part 6; Stone Ocean"
+  },
 
   johnny: {
     Name:"Johnny Joestar",
-    Personality: "",
+    Personality: "paralyzed, insecure, relies on others, grows into being resillient, intellegent, and determined",
+    Age: "19",
     Stand: "Tusk",
     Evolution: "Acts: 1-4",
-    StandInfo: "",
-    Introduced: "Part 7; Steel Ball Run"},
+    StandType: "Close Range/Long Range",
+    StandAppearance: "",
+    StandAbilities: "",
+    Introduced: "Part 7; Steel Ball Run"
+  },
 
   Gappy: {
     Name: "Gappy",
-    Personality: ", is",
+    Personality: "Amnesiac, struggles with identity, compassionate and has a sense of ruthelessness, logically-driven",
+    Age: "19",
     Stand: "Soft and Wet",
     Evolution: "Go Beyond!",
-    StandInfo: "",
-    Introduced: "Part 8; Jojolion"},
+    StandType: "Close Range/Mid-Range",
+    StandAppearance: "",
+    StandAbilities: "",
+    Introduced: "Part 8; Jojolion"
+  },
 
   Jodio: { 
     Name: "Jodio Joestar", 
-    Personality: "",
+    Personality: "brash, impulsive, pragmatically ambitious, timid, and protective",
+    Age: "15",
     Stand: "November Rain",
-    StandInfo: "His stand is a palm tree that controls rain, and within a 9 meter radius of coming in contact with the stand,  ",
-    Introduced: "Part 9; JOJOLands"}
+    StandType: "Close Range",
+    StandAppearance: "His stand is a palm tree that controls rain, and within a 9 meter radius of coming in contact with the stand,",
+    StandAbilities: "",
+    Introduced: "Part 9; JOJOLands"
+  }
 };
 
 const joestars = jojoIds.map(id => document.querySelector(`#${id}`));
@@ -95,6 +133,7 @@ if (jojoList) {
       tooltip.className = "tooltip";
       const info = jojoDescriptions[name];
       const details = [];
+      if (info.Age) details.push(info.Age);
       if (info.FightingStyle) details.push(info.FightingStyle);
       if (info.FightingStyleInfo) details.push(info.FightingStyleInfo);
       if (info.Stand) details.push(info.Stand);
